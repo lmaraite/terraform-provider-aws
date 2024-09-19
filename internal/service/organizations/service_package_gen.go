@@ -134,6 +134,11 @@ func (p *servicePackage) SDKResources(ctx context.Context) []*types.ServicePacka
 				IdentifierAttribute: names.AttrID,
 			},
 		},
+		{
+			Factory:  resourceTag,
+			TypeName: "aws_organizations_tag",
+			Name:     "Organizations Resource Tag",
+		},
 	}
 }
 
